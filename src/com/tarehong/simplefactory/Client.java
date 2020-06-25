@@ -1,4 +1,4 @@
-package com.tarehong.singleton.simplefactory;
+package com.tarehong.simplefactory;
 
 import java.util.ArrayList;
 import java.util.List;

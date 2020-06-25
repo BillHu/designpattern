@@ -1,4 +1,4 @@
-package com.tarehong.singleton.factorymethod;
+package com.tarehong.simplefactory;
 
 /**
  * @author billhu
