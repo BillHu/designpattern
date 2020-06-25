@@ -5,12 +5,21 @@ package com.tarehong.singleton.simplefactory;
  */
 public class SimpleFactory {
 
-    public static IProduct createProduct(ProductType productType){
-        if(productType.equals(ProductType.Type1)){
+    private static final SimpleFactory instance = new SimpleFactory();
+
+    private SimpleFactory() {
+    }
+
+    public static SimpleFactory getInstance() {
+        return instance;
+    }
+
+    public IProduct createProduct(ProductType productType) {
+        if (productType.equals(ProductType.Type1)) {
             return new ConcreteProduct1();
-        }else if(productType.equals(ProductType.Type2)){
+        } else if (productType.equals(ProductType.Type2)) {
             return new ConcreteProduct2();
-        }else {
+        } else {
             return null;
         }
 
